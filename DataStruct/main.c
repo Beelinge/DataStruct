@@ -8,8 +8,9 @@
 
 #include <stdio.h>
 
+#include "sto_sqe.h"
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!");
+    action();
     return 0;
 }
