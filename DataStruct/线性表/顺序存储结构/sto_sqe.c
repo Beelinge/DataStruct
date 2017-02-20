@@ -57,14 +57,15 @@ Status ListInsert(SqList *L, int i, ElemType e){
 }
 
 //删除元素
-Status ListDelete(SqList *L, int i, ElemType e){
+Status ListDelete(SqList *L, int i, ElemType *e){
     int k;
-    if (i < 1 || i > L->length + 1) {
+    if (i < 1 || i > L->length) {
         return ERROR;
     }
-    if (i <= L->length) {
-        for (k = i - 1 ; k <= L->length - 1; k++) {
-            L->data[k] = L->data[k+1];
+    *e = L->data[i-1];
+    if (i < L->length) {
+        for (k = i ; k < L->length; k++) {
+            L->data[k-1] = L->data[k];
         }
     }
     L->length--;
@@ -84,7 +85,7 @@ void action(){
     ListInsert(L, 5, e);
     mylog(L);
     
-    ListDelete(L, 5, e);
+    ListDelete(L, 5, &e);
     mylog(L);
     
 }
