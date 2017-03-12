@@ -12,5 +12,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#include "sto_h.h"
+
+
 void action();
 #endif /* sto_sqe_h */

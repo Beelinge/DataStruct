@@ -10,6 +10,7 @@
 		8E2A799A1E598D4200B85F9E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79991E598D4200B85F9E /* main.c */; };
 		8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A21E599A7E00B85F9E /* sto_sqe.c */; };
 		8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A61E5B265A00B85F9E /* sto_link.c */; };
+		8E7F64491E6480C700048D6D /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F64471E6480C700048D6D /* stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,9 @@
 		8E2A79A31E599A7E00B85F9E /* sto_sqe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_sqe.h; sourceTree = "<group>"; };
 		8E2A79A61E5B265A00B85F9E /* sto_link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sto_link.c; sourceTree = "<group>"; };
 		8E2A79A71E5B265A00B85F9E /* sto_link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_link.h; sourceTree = "<group>"; };
+		8E7F64471E6480C700048D6D /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		8E7F64481E6480C700048D6D /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+		8E7F644D1E6482AD00048D6D /* sto_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_h.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +76,10 @@
 		8E2A79A01E59977B00B85F9E /* 线性表 */ = {
 			isa = PBXGroup;
 			children = (
+				8E7F64461E6480B200048D6D /* 栈 */,
 				8E2A79A51E5B261300B85F9E /* 链式存储结构 */,
 				8E2A79A11E5997CC00B85F9E /* 顺序存储结构 */,
+				8E7F644D1E6482AD00048D6D /* sto_h.h */,
 			);
 			path = "线性表";
 			sourceTree = "<group>";
@@ -94,6 +100,15 @@
 				8E2A79A71E5B265A00B85F9E /* sto_link.h */,
 			);
 			path = "链式存储结构";
+			sourceTree = "<group>";
+		};
+		8E7F64461E6480B200048D6D /* 栈 */ = {
+			isa = PBXGroup;
+			children = (
+				8E7F64471E6480C700048D6D /* stack.c */,
+				8E7F64481E6480C700048D6D /* stack.h */,
+			);
+			path = "栈";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +170,7 @@
 			files = (
 				8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */,
 				8E2A799A1E598D4200B85F9E /* main.c in Sources */,
+				8E7F64491E6480C700048D6D /* stack.c in Sources */,
 				8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

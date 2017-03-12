@@ -1,16 +1,15 @@
 //
-//  sto_link.h
+//  stack.h
 //  DataStruct
 //
-//  Created by Beelin on 2017/2/20.
+//  Created by Beelin on 2017/2/27.
 //  Copyright © 2017年 Beelin. All rights reserved.
 //
 
-#ifndef sto_link_h
-#define sto_link_h
+#ifndef stack_h
+#define stack_h
 
 #include <stdio.h>
 
 #include "sto_h.h"
-
-#endif /* sto_link_h */
+#endif /* stack_h */
