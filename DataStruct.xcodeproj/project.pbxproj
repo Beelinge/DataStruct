@@ -10,7 +10,7 @@
 		8E2A799A1E598D4200B85F9E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79991E598D4200B85F9E /* main.c */; };
 		8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A21E599A7E00B85F9E /* sto_sqe.c */; };
 		8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A61E5B265A00B85F9E /* sto_link.c */; };
-		8E7F64491E6480C700048D6D /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E7F64471E6480C700048D6D /* stack.c */; };
+		8EBAD8C41F1D0EB400C6B7FB /* SqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAD8C21F1D0EB400C6B7FB /* SqStack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,9 +32,10 @@
 		8E2A79A31E599A7E00B85F9E /* sto_sqe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_sqe.h; sourceTree = "<group>"; };
 		8E2A79A61E5B265A00B85F9E /* sto_link.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sto_link.c; sourceTree = "<group>"; };
 		8E2A79A71E5B265A00B85F9E /* sto_link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_link.h; sourceTree = "<group>"; };
-		8E7F64471E6480C700048D6D /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
-		8E7F64481E6480C700048D6D /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 		8E7F644D1E6482AD00048D6D /* sto_h.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sto_h.h; sourceTree = "<group>"; };
+		8EBAD8B81F1D052800C6B7FB /* Listh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Listh.h; sourceTree = "<group>"; };
+		8EBAD8C21F1D0EB400C6B7FB /* SqStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SqStack.c; sourceTree = "<group>"; };
+		8EBAD8C31F1D0EB400C6B7FB /* SqStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 				8E2A79A51E5B261300B85F9E /* 链式存储结构 */,
 				8E2A79A11E5997CC00B85F9E /* 顺序存储结构 */,
 				8E7F644D1E6482AD00048D6D /* sto_h.h */,
+				8EBAD8B81F1D052800C6B7FB /* Listh.h */,
 			);
 			path = "线性表";
 			sourceTree = "<group>";
@@ -105,10 +107,18 @@
 		8E7F64461E6480B200048D6D /* 栈 */ = {
 			isa = PBXGroup;
 			children = (
-				8E7F64471E6480C700048D6D /* stack.c */,
-				8E7F64481E6480C700048D6D /* stack.h */,
+				8EBAD8B51F1D044300C6B7FB /* 顺序栈 */,
 			);
 			path = "栈";
+			sourceTree = "<group>";
+		};
+		8EBAD8B51F1D044300C6B7FB /* 顺序栈 */ = {
+			isa = PBXGroup;
+			children = (
+				8EBAD8C21F1D0EB400C6B7FB /* SqStack.c */,
+				8EBAD8C31F1D0EB400C6B7FB /* SqStack.h */,
+			);
+			path = "顺序栈";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,7 +180,7 @@
 			files = (
 				8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */,
 				8E2A799A1E598D4200B85F9E /* main.c in Sources */,
-				8E7F64491E6480C700048D6D /* stack.c in Sources */,
+				8EBAD8C41F1D0EB400C6B7FB /* SqStack.c in Sources */,
 				8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
