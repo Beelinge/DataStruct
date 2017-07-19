@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E075CB11F1DD7DB0017B627 /* ShareStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E075CAF1F1DD7DB0017B627 /* ShareStack.c */; };
 		8E2A799A1E598D4200B85F9E /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79991E598D4200B85F9E /* main.c */; };
 		8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A21E599A7E00B85F9E /* sto_sqe.c */; };
 		8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A61E5B265A00B85F9E /* sto_link.c */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E075CAF1F1DD7DB0017B627 /* ShareStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ShareStack.c; sourceTree = "<group>"; };
+		8E075CB01F1DD7DB0017B627 /* ShareStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareStack.h; sourceTree = "<group>"; };
 		8E2A79961E598D4200B85F9E /* DataStruct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DataStruct; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E2A79991E598D4200B85F9E /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		8E2A79A21E599A7E00B85F9E /* sto_sqe.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sto_sqe.c; sourceTree = "<group>"; };
@@ -49,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E075CAE1F1DD7AD0017B627 /* 共享栈 */ = {
+			isa = PBXGroup;
+			children = (
+				8E075CAF1F1DD7DB0017B627 /* ShareStack.c */,
+				8E075CB01F1DD7DB0017B627 /* ShareStack.h */,
+			);
+			path = "共享栈";
+			sourceTree = "<group>";
+		};
 		8E2A798D1E598D4200B85F9E = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +119,7 @@
 		8E7F64461E6480B200048D6D /* 栈 */ = {
 			isa = PBXGroup;
 			children = (
+				8E075CAE1F1DD7AD0017B627 /* 共享栈 */,
 				8EBAD8B51F1D044300C6B7FB /* 顺序栈 */,
 			);
 			path = "栈";
@@ -181,6 +194,7 @@
 				8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */,
 				8E2A799A1E598D4200B85F9E /* main.c in Sources */,
 				8EBAD8C41F1D0EB400C6B7FB /* SqStack.c in Sources */,
+				8E075CB11F1DD7DB0017B627 /* ShareStack.c in Sources */,
 				8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,6 +292,7 @@
 		8E2A799E1E598D4200B85F9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -285,6 +300,7 @@
 		8E2A799F1E598D4200B85F9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
