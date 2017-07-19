@@ -26,17 +26,14 @@ Status Push1(ShareStackStr *s, SElemType e, int i) {
     return OK;
 }
 Status Pop1(ShareStackStr *s, SElemType *e, int i) {
+    if (s->top1 + 1 == s->top2) {
+        return ERROR;
+    }
     if (i == 1) {
-        if (s->top1 == -1) {
-            return ERROR;
-        }
         *e = s->data[s->top1];
         s->top1--;
     }
     if (i == 2) {
-        if (s->top2 == MAXSIZE - 1) {
-            return ERROR;
-        }
         *e = s->data[s->top2];
         s->top1++;
     }

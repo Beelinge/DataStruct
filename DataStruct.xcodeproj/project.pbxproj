@@ -12,6 +12,7 @@
 		8E2A79A41E599A7E00B85F9E /* sto_sqe.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A21E599A7E00B85F9E /* sto_sqe.c */; };
 		8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A79A61E5B265A00B85F9E /* sto_link.c */; };
 		8EBAD8C41F1D0EB400C6B7FB /* SqStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAD8C21F1D0EB400C6B7FB /* SqStack.c */; };
+		8EBAD8C81F1E6C7F00C6B7FB /* LinkStack.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EBAD8C61F1E6C7F00C6B7FB /* LinkStack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -39,6 +40,8 @@
 		8EBAD8B81F1D052800C6B7FB /* Listh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Listh.h; sourceTree = "<group>"; };
 		8EBAD8C21F1D0EB400C6B7FB /* SqStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SqStack.c; sourceTree = "<group>"; };
 		8EBAD8C31F1D0EB400C6B7FB /* SqStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqStack.h; sourceTree = "<group>"; };
+		8EBAD8C61F1E6C7F00C6B7FB /* LinkStack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = LinkStack.c; sourceTree = "<group>"; };
+		8EBAD8C71F1E6C7F00C6B7FB /* LinkStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkStack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				8E075CAE1F1DD7AD0017B627 /* 共享栈 */,
+				8EBAD8C51F1E6C5900C6B7FB /* 链栈 */,
 				8EBAD8B51F1D044300C6B7FB /* 顺序栈 */,
 			);
 			path = "栈";
@@ -132,6 +136,15 @@
 				8EBAD8C31F1D0EB400C6B7FB /* SqStack.h */,
 			);
 			path = "顺序栈";
+			sourceTree = "<group>";
+		};
+		8EBAD8C51F1E6C5900C6B7FB /* 链栈 */ = {
+			isa = PBXGroup;
+			children = (
+				8EBAD8C61F1E6C7F00C6B7FB /* LinkStack.c */,
+				8EBAD8C71F1E6C7F00C6B7FB /* LinkStack.h */,
+			);
+			path = "链栈";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +208,7 @@
 				8E2A799A1E598D4200B85F9E /* main.c in Sources */,
 				8EBAD8C41F1D0EB400C6B7FB /* SqStack.c in Sources */,
 				8E075CB11F1DD7DB0017B627 /* ShareStack.c in Sources */,
+				8EBAD8C81F1E6C7F00C6B7FB /* LinkStack.c in Sources */,
 				8E2A79A81E5B265A00B85F9E /* sto_link.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
