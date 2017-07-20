@@ -22,4 +22,6 @@ typedef struct {
 Status Push(SqStackStr *s, SElemType e);
 Status Pop(SqStackStr *s, SElemType *e);
 
+void sqStackAction();
+
 #endif /* SqStack_h */

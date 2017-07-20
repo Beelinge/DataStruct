@@ -7,6 +7,7 @@
 //
 
 #include "LinkStack.h"
+#include <stdlib.h>
 
 Status pushLinkStack(LinkStack *ls, SElemType e) {
     LinkStackPtr s = (LinkStackPtr)malloc(sizeof(StackNode));
@@ -22,9 +23,12 @@ Status popLinkStack(LinkStack *ls, SElemType *e) {
     if (ls->count == -1) {
         return ERROR;
     }
-    LinkStackPtr s = (LinkStackPtr)malloc(sizeof(StackNode));
+    LinkStackPtr p;
+    
     *e = ls->top->data;
-    ls->top = s->next;
+    p = ls->top;
+    ls->top = ls->top->next;
     ls->count--;
+    free(p);
     return OK;
 }
