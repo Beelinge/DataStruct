@@ -15,7 +15,6 @@ Status pushLinkStack(LinkStack *ls, SElemType e) {
     s->next = ls->top;
     ls->top = s;
     ls->count++;
-    
     return OK;
 }
 
@@ -24,7 +23,6 @@ Status popLinkStack(LinkStack *ls, SElemType *e) {
         return ERROR;
     }
     LinkStackPtr p;
-    
     *e = ls->top->data;
     p = ls->top;
     ls->top = ls->top->next;

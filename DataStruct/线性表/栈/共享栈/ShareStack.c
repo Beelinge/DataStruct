@@ -8,14 +8,13 @@
 
 #include "ShareStack.h"
 #include <stdlib.h>
-Status Push1(ShareStackStr *s, SElemType e, int stackNumber) {
+Status pushShareStack(ShareStackStr *s, SElemType e, int stackNumber) {
     if (s->top1 + 1 == s->top2) { //栈满
         return ERROR;
     }
     if (stackNumber == 1) {
         s->top1++;
         s->data[s->top1] = e;
-        
     }
     if (stackNumber == 2) {
         s->top2--;
@@ -23,7 +22,7 @@ Status Push1(ShareStackStr *s, SElemType e, int stackNumber) {
     }
     return OK;
 }
-Status Pop1(ShareStackStr *s, SElemType *e, int stackNumber) {
+Status popShareStack(ShareStackStr *s, SElemType *e, int stackNumber) {
     
     if (stackNumber == 1) {
         if (s->top1 == -1) {
@@ -47,9 +46,9 @@ void shareStack() {
     s->top1 = -1;
     s->top2 = MAXSIZE;
     SElemType e = 10;
-    Push1(s, e, 1);
-    Push1(s, e, 1);
-     Push1(s, e, 2);
+    pushShareStack(s, e, 1);
+    pushShareStack(s, e, 1);
+     pushShareStack(s, e, 2);
     for (int i = -1; i < s->top1; i ++) {
         printf("top 1 data content : %d, top1 : %d\n", s->data[i + 1], s->top1);
     }
@@ -59,7 +58,7 @@ void shareStack() {
     }
     
     SElemType *e1 = (SElemType *)malloc(sizeof(SElemType));
-    Pop1(s, e1, 1);
+    popShareStack(s, e1, 1);
     for (int i = -1; i < s->top1; i ++) {
         printf("top 1 data content : %d, top1 : %d\n", s->data[i + 1], s->top1);
     }
